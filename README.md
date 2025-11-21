@@ -25,3 +25,18 @@ Secondary Entity Implemented (example: Product or Task)
 Create Read Update Delete
 
 JWT required for all operations
+
+
+4. API Endpoints
+Authentication Endpoints
+Method	Endpoint	Description
+POST	/api/users/register	Register a new user
+GET	/api/users/verify-email	Verify email link
+POST	/api/users/login	Login and get tokens
+POST	/api/users/refresh-token	Renew access token
+POST	/api/users/forgot-password	Send reset link
+POST	/api/users/reset-password	Reset password
+POST	/api/users/change-password	Logged-in user updates password
+Role Management (Admin Only)
+Method	Endpoint	Description
+PUT	/api/users/update-role	Update user role
